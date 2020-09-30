@@ -1,0 +1,80 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+p {
+  font-family: Georgia, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#apbt {
+  text-align: center;
+}
+
+#intro-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hist-pics {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+.images {
+  text-align: center;
+}
+
+figure {
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+  margin: 0;
+  padding: 16px;
+  color: antiquewhite;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 8px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=mystyle.css.map */
