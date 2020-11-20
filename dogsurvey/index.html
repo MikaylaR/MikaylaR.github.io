@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dog Adoption Survey</title>
+</head>
+
+<body>
+    <main>
+        <div class="form-container">
+            <h1 id="title">Dog Adoption Match-Maker Survey</h1>
+            <p id="description">Please fill out the survey to find your best match!</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your activity level?</p>
+                    <!-------- Dropdown menu -------->
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select activity level</option>
+                        <option value="couch potato">Couch Potato</option>
+                        <option value="mild">Mild Activity</option>
+                        <option value="moderate">Moderate Activity</option>
+                        <option value="active">Very Active</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What age dog are you looking for?</p>
+                    <!-------- Radio Buttons -------->
+                    <label>
+                        <input name="dog-age" value="puppy" type="radio" class="input-radio" checked />Puppy</label>
+                    <label>
+                        <input name="dog-age" value="adolescent" type="radio" class="input-radio" />Adolescent</label>
+
+                    <label><input name="dog-age" value="adult" type="radio" class="input-radio" />Adult</label>
+                    <label><input name="dog-age" value="senior" type="radio" class="input-radio" />Senior</label>
+                </div>
+                <div class="form-group">
+                    <p>Do you have kids?</p>
+                    <!-------- More Radio Buttons -------->
+                    <label>
+                        <input name="kids" value="no-kids" type="radio" class="input-radio" checked />No kids</label>
+                    <label>
+                        <input name="kids" value="under-12" type="radio" class="input-radio" />Kids younger than
+                        12</label>
+
+                    <label><input name="kids" value="over-12" type="radio" class="input-radio" />Kids 12+</label>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        Do you have other pets?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <!-------- Checkboxes -------->
+                    <label><input name="pets" value="dog" type="checkbox" class="input-checkbox" />Dog</label>
+                    <label>
+                        <input name="pets" value="cat" type="checkbox" class="input-checkbox" />Cat</label>
+                    <label><input name="pets" value="small-animal" type="checkbox" class="input-checkbox" />Other small
+                        animal</label>
+                    <label><input name="pets" value="farm-animal" type="checkbox" class="input-checkbox" />Farm
+                        animals</label>
+                    <label><input name="pets" value="no-pets" type="checkbox" class="input-checkbox" />None</label>
+
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
